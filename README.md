@@ -17,10 +17,10 @@ A voice-activated virtual assistant built with a modern tech stack, capable of p
 
 ##  Project Structure
 Virtual_Assistant/
-├── backend/ # Server-side logic (API, NLP, DB handling)
-├── frontend/ # UI and voice input/output
-├── .env.example # Sample env config
-├── .gitignore
+- backend/ # Server-side logic (API, NLP, DB handling)
+-  frontend/ # UI and voice input/output
+- .env.example # Sample env config
+- .gitignore
 
 
 ##  Getting Started
