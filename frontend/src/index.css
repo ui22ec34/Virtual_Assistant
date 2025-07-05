@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+
+@keyframes flickerWave {
+  0% {
+    box-shadow: 0 0 8px rgba(255, 0, 255, 0.3);
+    transform: scale(1);
+  }
+  25% {
+    box-shadow: 0 0 16px rgba(255, 0, 255, 0.6);
+    transform: scale(1.02);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(255, 0, 255, 1);
+    transform: scale(1.04);
+  }
+  75% {
+    box-shadow: 0 0 16px rgba(255, 0, 255, 0.6);
+    transform: scale(1.02);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(255, 0, 255, 0.3);
+    transform: scale(1);
+  }
+}
+
+.flicker-wave {
+  animation: flickerWave 1.5s infinite ease-in-out;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+
+
+@keyframes moveGalaxy {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 1000px;
+  }
+}
+
+.bg-galaxy {
+  background-image: url('/galaxy.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  animation: moveGalaxy 60s linear infinite;
+}
+
+
+@keyframes neonShimmer {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #b388ff,
+      0 0 10px #b388ff,
+      0 0 15px #a855f7,
+      0 0 25px #9333ea,
+      0 0 35px #7e22ce,
+      0 0 50px rgba(194,127,255,0.8);
+  }
+  50% {
+    text-shadow:
+      0 0 3px #b388ff,
+      0 0 6px #a855f7,
+      0 0 10px #9333ea,
+      0 0 20px #7e22ce,
+      0 0 30px rgba(194,127,255,0.4);
+  }
+}
+
+.animate-neon-shimmer {
+  animation: neonShimmer 3s infinite ease-in-out;
+}
+
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-wave {
+  animation: wave 2s ease-in-out infinite;
+}
