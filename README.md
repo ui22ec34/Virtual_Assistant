@@ -29,7 +29,6 @@ Virtual_Assistant/
 Make sure you have:
 
 - Node.js & npm
-- Python (if backend is Python-based)
 - Git
 - Browser with Web Speech support
 
